@@ -1,0 +1,92 @@
+﻿/* Applied to everything */
+* {
+    margin-left: 10x;
+    margin-right: 10px;
+    font-family: 'Questrial', sans-serif;
+}
+
+/* Text Styles */
+h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 52px;
+    top: 5px;
+}
+
+h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p.big { /* Bigger line spacing */
+    line-height: 1.4
+}
+
+/* Images*/
+.bkgr_image { /* For chicago image in background */
+    position: absolute;
+    display: block;
+    width: 1263px;
+    height: 932px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.profile_pic {
+    position: relative;
+    display: block;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Text Background Boxes */
+.centerbox {
+    position: relative;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(192, 251, 255, 0.4);
+}
+
+.txtbox {
+    position: relative;
+    margin: 40px;
+    padding: 20px;
+    background: rgba(192, 251, 255, 0.8);
+}
+
+/* Webpage Sections */
+
+.navbar {
+    position: fixed;
+    width: 1440px;
+    height: 90px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: rgba(192, 251, 255, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact {
+    position: relative;
+    padding: 30px;
+    left: 0px;
+    right: 0px;
+}
+
