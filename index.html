@@ -1,13 +1,138 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel = "stylesheet" href ="./StyleSheet.css">
-        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    </head>
-<body>
-<h1>Hello! Welcome to Carol's GitHub Page.</h1>
-<p>(site crustiness to be fixed later)</p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="https://glitch.com/favicon.ico" /> -->
 
-<p><a href="othersite\AboutMe.html">First website</a></p>
-</body>
+    <!--     Load google fonts, if you want  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Carol Liu's Webpage</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="nav-bar">
+      <div class = "nav-buttons">
+        <button onclick = "scrollHome()"> Back to Top </button>
+        <button onclick="scrollAff()"> Affiliations </button>
+        <button onclick="scrollAbout()"> Hobbies </button>
+      </div>
+    </div>
+    
+    <div class="half-box" id = "home">
+      
+      <div class="open-text">
+        <h1>Hey there! Welcome to my page.</h1>
+      </div>
+
+      <div>
+        <img
+          class="profile"
+          src="pics/profile.jpg"
+        />
+      </div>
+      
+    </div>
+    
+    <div>
+      <p>
+        Hi! I'm Carol, and this will be my 4th year at Northwestern University, studying Applied Mathematics / Computer Science (BS/MS Program).
+      </p>
+      
+    </div>
+    
+    <br/>
+    
+    <div>
+      <a href="https://github.com/carolliu2024">GitHub</a>
+      <a href="https://www.linkedin.com/in/carol-liu-073475179/">LinkedIn</a>
+    </div>
+    
+    <!-- <button onclick="scrollAbout()"> Learn more about me! (scrolls down) </button> -->
+    <br/>
+    <h2 id="affiliations">
+      Affiliations/Mentions
+    </h2>
+    <p>
+      Here's some of the groups I'm affiliated with at Northwestern:
+    </p>
+    <p>
+      IEEE @ NU (Former Executive)
+    </p>
+    <div class="imgs">
+      <img src = "pics\ieee\JJJ01508.jpg">
+      <img src = "pics\ieee\JJJ01313.jpg">
+    </div>
+    
+    <p>
+      Wastewater Epidemiology Modeling Team
+    </p>
+
+    <div class="imgs">
+      <img src = "pics\wastewater_team.png">
+    </div>
+    
+    <h3>
+      Awards:
+    </h3>
+    
+    <p>
+    The Alumnae of Northwestern University (Alumnae Scholar) , Outstanding Peer Mentor for Intro ML
+    </p>
+    
+    <div class="imgs">
+
+      <a href = "https://www.nualumnae.org/content/carol-liu-alumnae-scholar" target="_blank">
+        <img src = "pics\alumnae.png">
+      </a>
+      
+      <a href = "https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/northwestern-cs-announces-winter-2023-outstanding-teaching-assistant-and-peer-mentors.html" target="_blank">
+        <img src = "pics\pm.png">
+      </a>
+      
+    </div>
+    
+    
+    <h2 id="about">
+      Hobbies
+    </h2>
+    <p>
+      I enjoy eating, working out, playing games, and watching anime. 
+    </p>
+    
+    <p>
+      I've recently started crocheting too!
+      Here's some of my crochets so far :)
+    </p>
+    <div class = "crochets">
+      <img src = "pics\crochets\crochet_chicken.jpg">
+      <img src = "pics\crochets\crochet_bunny.jpg">
+      
+    </div>
+    
+    <p>
+      Here's a picture of me dressed up as a character from the anime Spy x Family, mixed with pictures of my favorite foods.
+    </p>
+    <div class="gallery">
+      <img src = "pics\yor.png">
+      <img src = "pics\food\ribs.jpg">
+      <img src = "pics\food\katsu.jpg">
+      <img src = "pics\food\sushi.jpg">
+      <img src = "pics\food\duck_curry.jpg">
+    </div>
+    
+    <button onclick="spawnDuck()">Spawn a little duck (for fun)</button>
+    <img class = "duck" id = "duck" src="pics\chicken.png" alt="duck">
+  </body>
 </html>
